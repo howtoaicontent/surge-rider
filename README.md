@@ -49,10 +49,6 @@ Then visit `http://localhost:8000`.
 | `style.css`  | Layout and touch button styles       |
 | `game.js`    | Game logic, rendering and audio      |
 
-## Deployment
-
-Pushes to `main` are published to GitHub Pages by [`.github/workflows/pages.yml`](.github/workflows/pages.yml). In the repository settings, set **Pages → Source** to **GitHub Actions**.
-
 ## License
 
-[BSD Zero Clause License (0BSD)](LICENSE). Use it for anything, with no attribution required.
+[BSD Zero Clause License (0BSD)](LICENSE). Use it for anything, with no attribution required. Built with Opus 5.5 by Björn Sennbrink.
