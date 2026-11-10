@@ -2,25 +2,23 @@
 
 A small jetski arcade game for the browser. Hit ramps, land clean spins, boost into rivals and survive the river for as long as you can.
 
-It is plain HTML, CSS and JavaScript drawn on a single canvas, with no dependencies and no build step.
+**[Play it here](https://howtoaicontent.github.io/surge-rider/)**
 
-## Run it
+![Surge Rider gameplay](docs/gameplay.png)
 
-Open `index.html` in a browser, or serve the folder:
+It is plain HTML, CSS and JavaScript drawn on a single canvas, with no dependencies and no build step. It works with keyboard on desktop and with on-screen buttons on touch devices.
 
-```bash
-python3 -m http.server 8000
-```
+## Built with generative AI
 
-Then visit `http://localhost:8000`.
+This game was written with Claude Opus as an example of what generative AI can build. It is shared freely for anyone to play, read, learn from and reuse. See [License](#license).
 
 ## Controls
 
-| Input               | Desktop                | Touch       |
-| ------------------- | ---------------------- | ----------- |
-| Steer / spin in air | `←` `→` or `A` `D`     | ◀ ▶ buttons |
-| Throttle / brake    | `↑` / `↓` or `W` / `S` | BRAKE button |
-| Nitro               | `Space` or `Shift`     | NITRO button |
+| Input               | Desktop                | Touch         |
+| ------------------- | ---------------------- | ------------- |
+| Steer / spin in air | `←` `→` or `A` `D`     | ◀ ▶ buttons   |
+| Throttle / brake    | `↑` / `↓` or `W` / `S` | BRAKE button  |
+| Nitro               | `Space` or `Shift`     | NITRO button  |
 | Pause / mute        | `P` or `Esc` / `M`     | Tap to resume |
 
 ## How to play
@@ -33,6 +31,16 @@ Then visit `http://localhost:8000`.
 
 Your best score is saved in the browser's `localStorage`.
 
+## Run it locally
+
+Open `index.html` in a browser, or serve the folder:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit `http://localhost:8000`.
+
 ## Files
 
 | File         | Purpose                              |
@@ -40,3 +48,11 @@ Your best score is saved in the browser's `localStorage`.
 | `index.html` | Page shell, metadata, touch controls |
 | `style.css`  | Layout and touch button styles       |
 | `game.js`    | Game logic, rendering and audio      |
+
+## Deployment
+
+Pushes to `main` are published to GitHub Pages by [`.github/workflows/pages.yml`](.github/workflows/pages.yml). In the repository settings, set **Pages → Source** to **GitHub Actions**.
+
+## License
+
+[BSD Zero Clause License (0BSD)](LICENSE). Use it for anything, with no attribution required.
